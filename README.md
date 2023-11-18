@@ -12,6 +12,9 @@
 
 Python으로 구현된 FastAPI 어플리케이션 템플릿입니다.
 
+- [왜 fastapi 인가](./why.md)
+
+
 ## 🖇️ 준비 및 확인사항
 
 ### 지원 Python 버전
