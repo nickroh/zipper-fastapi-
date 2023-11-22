@@ -3,7 +3,7 @@
 import asyncio
 import databases
 
-DATABASE_URL = "postgresql://user:password@localhost/dbname"
+DATABASE_URL = "postgresql://root:shrjsgh@svc.sel5.cloudtype.app:31880/zipper"
 
 async def check_database_connection():
     database = databases.Database(DATABASE_URL)
