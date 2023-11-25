@@ -8,19 +8,12 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
-class Item(Base):
-    __tablename__ = "items"
+class Users(Base):
+    __tablename__ = "health_users"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    description = Column(String)
-    owner_id = Column(Integer, ForeignKey("users.id"))
-
-class User(Base):
-    __tablename__ = "users"
-
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    email = Column(String, unique=True, index=True)
+    nickname = Column(String(40))
+    gender = Column(CHAR(2))
+    age = Column(Integer(4))
 
 Base.metadata.create_all(bind=engine)

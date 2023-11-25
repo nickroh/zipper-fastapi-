@@ -35,9 +35,9 @@ uvicorn main:app --host=0.0.0.0 --port=8000
 
 for github codespace
 ```bash
-python3 -m uvicorn main:app --host=0.0.0.0 --port=8000
+python3 -m uvicorn src.main:app --host=0.0.0.0 --port=8000
 ```
-
+https://yihoeyiho.tistory.com/44
 
 ## 🏷️ 환경변수
 

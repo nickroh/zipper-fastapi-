@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from .database import Item
+from src.db.database import Item
 
 def create_item(db: Session, item: Item):
     db.add(item)
