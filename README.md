@@ -38,6 +38,7 @@ for github codespace
 python3 -m uvicorn src.main:app --host=0.0.0.0 --port=8000
 ```
 https://yihoeyiho.tistory.com/44
+https://wikidocs.net/175967
 
 ## 🏷️ 환경변수
 
